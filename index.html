@@ -40,7 +40,7 @@
                     </div>
                     <!-- //헤더 메뉴 -->
                     <div class="header-tit">
-                        <h1>Professional Publisher &amp; Designer</h1><br>
+                        <h1>Projenny's  Standard WebSite</h1><br>
                         <a href="https://amj2013.github.io/websitenew">projenny.co.kr</a>
                     </div>
                     <!-- //헤더 타이틀 -->
@@ -53,10 +53,22 @@
                     <!-- //헤더 아이콘 -->
                 </div>
             </div>
+            
         </div>
         <!-- //header -->
         
+     <div id="cont_tit">
+                <div class="container">
+                    <div class="tit" button="onclick">
+                        <h2>전체메뉴</h2>
+                        <a href="#" class="btn"><span class="ir_pm">전체메뉴</span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- //cont_tit -->
+        
         <div id="contents">
+                
             <div id="cont_nav">
                 <div class="container">
                     <h2 class="ir_su">전체 메뉴</h2>
@@ -116,20 +128,20 @@
             </div>
             <!-- //cont_nav -->
             
-            <div id="cont_tit">
+<!--            <div id="cont_tit">
                 <div class="container">
-                    <div class="tit">
-                        <h2>&ldquo;나는 퍼블리셔다!&rdquo;</h2>
+                    <div class="tit" button="onclick">
+                        <h2>전체메뉴 보기</h2>
                         <a href="#" class="btn"><span class="ir_pm">전체메뉴</span></a>
                     </div>
                 </div>
-            </div>
+            </div>-->
             <!-- //cont_tit -->
             
-            <div id="cont_ban">
+             <!-- <div id="cont_ban">
                 <div class="container">
                     <div class="ban">
-<!--
+
                         <a href="#" class="prev"><span class="ir_pm">이전 이미지</span></a>
                         <ul>
                             <li class="ban_img1"><a href="#"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></a></li>
@@ -137,7 +149,7 @@
                             <li class="ban_img3"><a href="#"><img src="img/banner_link3.jpg" alt="로그인 폼 만들기"></a></li>
                         </ul>
                         <a href="#" class="next"><span class="ir_pm">다음 이미지</span></a>
--->
+
                         <div><a href="#"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></a></div>
                         <div><a href="#"><img src="img/banner_link2.jpg" alt="CSS 버튼 만들기"></a></div>
                         <div><a href="#"><img src="img/banner_link3.jpg" alt="로그인 폼 만들기"></a></div>
@@ -149,7 +161,8 @@
                         <div><a href="#"><img src="img/banner_link3.jpg" alt="로그인 폼 만들기"></a></div>
                     </div>
                 </div>
-            </div>
+            </div>     -->
+       
             <!-- //cont_ban -->
             
             <div id="cont_cont">
@@ -430,6 +443,7 @@
                 </div>
             </div>
             <!-- //cont_cont -->
+            
         </div>
         <!-- //contents -->
         
@@ -560,7 +574,7 @@
         });
         
         //전체 메뉴
-        $(".tit .btn").click(function(){
+          $(".tit").click(function(){
             //$("#cont_nav").css("display","block");
             //$("#cont_nav").show();
             //$("#cont_nav").fadeIn();
@@ -568,8 +582,18 @@
             //$("#cont_nav").toggle();
             //$("#cont_nav").fadeToggle();
             $("#cont_nav").slideToggle();
-            $(this).toggleClass("on");
+            $(".tit .btn").toggleClass("on");
         });
+//        $(".tit .btn").click(function(){
+//            //$("#cont_nav").css("display","block");
+//            //$("#cont_nav").show();
+//            //$("#cont_nav").fadeIn();
+//            //$("#cont_nav").slideDown();
+//            //$("#cont_nav").toggle();
+//            //$("#cont_nav").fadeToggle();
+//            $("#cont_nav").slideToggle();
+//            $(this).toggleClass("on");
+//        });
     </script>
 </body>
 </html>
